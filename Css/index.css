@@ -1,0 +1,158 @@
+.my-bg{
+    background: url(../Images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    transition: 0.75s;
+    height: 45em;
+}
+.my-textLogo{   
+    padding-top: 5%;
+}
+
+.scrolldown-effect{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    border: 2px solid #000;
+    width: 50px;
+    height: 50px;
+    border: transparent;
+}
+
+.scrolldown-effect::before,
+.scrolldown-effect::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #000;
+    height: 30px;
+    width: 30px;
+    transform: translate(-50%,-50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1.5s ease-in-out infinite;
+}
+
+.scrolldown-effect::after{
+    top: 30%;
+    animation-delay: 1s;
+}
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+.introduce-place{
+    margin-top: 50%;
+    margin-bottom: 4%;
+}
+
+.introduce-bg{
+    background: #67d7e6 linear-gradient(rgba(211, 205, 205, 0.19), rgba(219, 184, 184, 0.6));
+    height: 40em;
+    margin-bottom: 1%;
+    border-radius: 5px;
+}
+
+.introduce-desc{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 2px ridge white;
+    word-spacing: 1.75px;
+}
+
+.desc-img{
+    height: 555px;
+    margin: 3px auto;
+    margin-bottom: 3%;
+}
+
+.branding-content{  
+    margin-bottom: 2%;
+}
+
+.nav{
+    letter-spacing: 0.05px;
+    line-height: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1.5%;
+}
+
+.thongKe-text{
+    font-size: 20px;
+    font-family: Tahoma;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1%;
+}
+
+.place-menu{
+    background: #67d7e6 linear-gradient(rgba(211, 205, 205, 0.19), rgba(219, 184, 184, 0.6));
+    height: 550px;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+.card{
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 95%
+}
+
+.card-title{
+    font-size: 25px;
+    border-top: 2px ridge wheat;
+    border-bottom: 2px ridge wheat;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.25s ease;
+    width: 100%;
+    height: 200px;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+.food-menu{
+    margin-top: 3%;
+    background: #965bad linear-gradient(rgba(211, 205, 205, 0.19), rgba(219, 184, 184, 0.6));
+    width: 100%;
+    min-height: 670px;
+}
+
+.food-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 1%;
+    border-bottom: 2px ridge rgb(0, 0, 0);
+}
+
+.food-img{
+    margin: 2%;
+    width: 20em;
+    height: 15em;
+ 
+}
